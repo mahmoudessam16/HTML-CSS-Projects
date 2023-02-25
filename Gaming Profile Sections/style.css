@@ -1,0 +1,208 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* Global */
+.main-title {
+    background-color: #607D8B;
+    width: fit-content;
+    padding: 10px 15px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 25px;
+}
+/* End Global */
+
+body {
+    background-color: #eee;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    width: 90vw;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px !important;
+}
+
+.first-section .container {
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    padding: 15px;
+    position: relative;
+}
+.first-section .container::after {
+    position:absolute;
+    content: '';
+    width: 1px;
+    height: 100%;
+    background-color: #eee;
+    left: 17%;
+    top: 0;
+    z-index: 1000;
+}
+.first-section .container::before {
+    position:absolute;
+    content: '';
+    width: 100%;
+    height: 2px;
+    background-color: #d5d5d5;
+    left: 0;
+    bottom: -15px;
+    z-index: 1001;
+}
+
+.first-section .left {
+    text-align: center;
+    margin-right: 50px;
+    position: relative;
+}
+
+.first-section .left h3 {
+    margin-top: 10px;
+}
+
+.first-section .left span.progress {
+    display: block;
+    width: 170px;
+    height: 18px;
+    background-color: #d5d5d5;
+    margin: 8px 0;
+    border-radius: 4px;
+    overflow: hidden;
+    position: relative;
+}
+
+.first-section .left span.progress::before {
+    position: absolute;
+    content: '';
+    background-color: #009688;
+    width: 70%;
+    height: 100%;
+    left: 0;
+}
+
+.first-section img {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    border: 5px solid #eee;
+}
+
+.first-section .left p {
+    font-size: 13px;
+    margin: 8px 7px;
+}
+
+.first-section .left p .point-num {
+    color: #009688;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.first-section .right {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.first-section .right .info h1 {
+    font-size: 25px;
+    margin: 15px 0 15px 0;
+}
+
+.first-section .right .info p {
+    color: #777;
+    line-height: 1.8;
+    font-weight: 300;
+}
+
+.first-section .right .time {
+    margin-top: 60px;
+    align-self: flex-end;
+}
+
+/* Second Section */
+.second-section{
+    margin: 20px;
+}
+.second-section .container {
+    padding: 10px;
+}
+.second-section .container ul {
+    list-style: none;
+    margin-top: 20px;
+}
+.second-section .container ul li {
+    font-weight: 300;
+    margin-bottom: 20px;
+    position: relative;
+}
+.second-section .container ul li .number {
+    color:#009688;
+    font-weight: bold;
+}
+.second-section .container ul li .mission {
+    color: #F38EA1;
+    font-weight: bold;
+}
+.second-section .container ul li:not(:last-child):after {
+    position: absolute;
+    content: '';
+    background-color: #eee;
+    width: 100%;
+    height: 1px;
+    left: 0;
+    bottom: -10px;
+}
+/* Third Section */
+.third-section .container {
+    padding: 10px;
+}
+.third-section .container h3 {
+    font-weight: 300;
+    margin: 20px 20px 15px 0;
+}
+.third-section .container h3 .number-one {
+    color: #F38EA1;
+    font-weight: bold;
+}
+.third-section .container h3 .number-two {
+    color: #359AF3;
+    font-weight: bold;
+}
+
+/* fourth section */
+.fourth-section .container {
+    padding: 10px;
+}
+.fourth-section .container .content {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.fourth-section .container .content .score-1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 25px 0;
+    position: relative;
+}
+.fourth-section .container .content .score-1:not(:last-child):before {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 1px;
+    background-color: #eee;
+    bottom: -10px;
+}
+.fourth-section .container .content .score-1 h3 {
+    font-weight: 300;
+}
+.fourth-section .container .content .score-1.no h4 {
+    color: red;
+}
+.fourth-section .container .content .score-1 h4 {
+    color: green;
+}

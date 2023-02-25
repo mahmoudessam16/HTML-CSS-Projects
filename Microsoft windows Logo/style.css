@@ -1,0 +1,10 @@
+div {
+    background-color: #aaa;
+    box-shadow: 100px -100px 0 0 #7fba00, -102px 102px 0 0 #00a4ef, 100px 102px 0 0 #ffb900, -102px -100px 0 0 #f65314;
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

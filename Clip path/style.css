@@ -1,0 +1,15 @@
+.parent {
+    width: 210px;
+    height: 210px;
+    background-color: #eee;
+    margin: 100px auto;
+    position: relative;
+}
+
+.t1 {
+    width: 200px;
+    height: 200px;
+    background-color: indianred;
+    position: absolute;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}

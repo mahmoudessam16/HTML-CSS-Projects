@@ -1,0 +1,61 @@
+body {
+    padding-left: 40px;
+    font-family: 'Cairo', sans-serif;
+}
+.triangle-down h3 {
+    position: relative;
+    width: 200px;
+}
+.triangle-down h3::before {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 2px;
+    bottom: -10px;
+}    
+.triangle-down h3::after {
+    position: absolute;
+    content: '';
+    border-width: 11px;
+    border-style: solid;
+    border-color: #2c6ccf transparent transparent transparent;
+    left: -2px;
+    bottom: -30px;
+} 
+.triangle-down h3:nth-child(1) {
+    color: #2c6ccf;
+}
+.triangle-down h3:nth-child(2) {
+    color: #cf2c2c;
+}
+.triangle-down h3:nth-child(3) {
+    color: #30a049;
+}
+.triangle-down h3:nth-child(4) {
+    color: #d2661a;
+}
+.triangle-down h3.blue::before {
+    background: linear-gradient(to right, #2c6ccf 0%, #2c6ccf 50%, #eee 50%);
+}
+.triangle-down h3.green::before {
+    background: linear-gradient(to right, #30a049 0%, #30a049 50%, #eee 50%);
+}
+.triangle-down h3.red::before {
+    background: linear-gradient(to right, #cf2c2c 0%, #cf2c2c 50%, #eee 50%);
+}
+.triangle-down h3.brown::before {
+    background: linear-gradient(to right, #d2661a 0%, #d2661a 50%, #eee 50%);
+}
+.triangle-down h3.blue::after {
+    border-top-color: #2c6ccf;
+}
+.triangle-down h3.red::after {
+    border-top-color: #cf2c2c;
+}
+.triangle-down h3.green::after {
+    border-top-color: #30a049;
+}
+
+.triangle-down h3.brown::after {
+    border-top-color: #d2661a;
+}

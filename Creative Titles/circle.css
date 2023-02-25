@@ -1,0 +1,77 @@
+body {
+    padding-left: 40px;
+    font-family: 'Cairo', sans-serif;
+}
+
+
+.circle h3 {
+    position: relative;
+    width: 200px;
+}
+
+.circle h3::before {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 2px;
+    bottom: -10px;
+}    
+
+.circle h3::after {
+    position: absolute;
+    content: '';
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #426ccf;
+    left: 0;
+    bottom: -16px;
+} 
+
+.circle h3:nth-child(1) {
+    color: #2c6ccf;
+}
+
+.circle h3:nth-child(2) {
+    color: #cf2c2c;
+}
+
+.circle h3:nth-child(3) {
+    color: #30a049;
+}
+
+.circle h3:nth-child(4) {
+    color: #d2661a;
+}
+
+.circle h3.blue::before {
+    background: linear-gradient(to right, #2c6ccf 0%, #2c6ccf 50%, #eee 50%);
+}
+
+.circle h3.blue::after {
+    background-color:#2c6ccf;
+}
+
+.circle h3.green::before {
+    background: linear-gradient(to right, #30a049 0%, #30a049 50%, #eee 50%);
+}
+
+.circle h3.green::after {
+    background-color: #30a049;
+}
+
+.circle h3.red::before {
+    background: linear-gradient(to right, #cf2c2c 0%, #cf2c2c 50%, #eee 50%);
+}
+
+.circle h3.red::after {
+    background-color: #cf2c2c;
+}
+
+.circle h3.brown::before {
+    background: linear-gradient(to right, #d2661a 0%, #d2661a 50%, #eee 50%);
+}
+
+.circle h3.brown::after {
+    background-color:#d2661a;
+}

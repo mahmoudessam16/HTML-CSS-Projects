@@ -1,0 +1,23 @@
+html {
+    scroll-behavior: smooth;
+}
+
+div {
+    height: 100vh;
+}
+
+.top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 8px;
+    border-radius: 3px;
+    font-weight: bold;
+    text-transform: capitalize;
+    cursor: pointer;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
